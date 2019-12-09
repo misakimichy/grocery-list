@@ -9,11 +9,10 @@ class GroceryList
         
         Console.WriteLine("My grocery list:");
 
-        foreach (string item in myGroceryList)
+        for( int i = 0; i < myGroceryList.Length; i++)
         {
-            Console.WriteLine(item);
+            Console.WriteLine(myGroceryList[i]);
         }
-
         int total = 0;
         foreach (int price in groceryPriceList)
         {
